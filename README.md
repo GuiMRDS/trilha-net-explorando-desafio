@@ -1,21 +1,51 @@
-# DIO - Trilha .NET - Explorando a linguagem C#
-www.dio.me
+# 🏨 Sistema de Hospedagem - DIO .NET
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de explorando a linguagem C#, da trilha .NET da DIO.
+### Desafio de Projeto - Trilha .NET - Módulo: Explorando a linguagem C#
 
-## Contexto
-Você foi contratado para construir um sistema de hospedagem, que será usado para realizar uma reserva em um hotel. Você precisará usar a classe Pessoa, que representa o hóspede, a classe Suíte, e a classe Reserva, que fará um relacionamento entre ambos.
+[![Badge](https://img.shields.io/badge/DIO-Projeto%20.NET-blue.svg)](https://www.dio.me/)
 
-O seu programa deverá cálcular corretamente os valores dos métodos da classe Reserva, que precisará trazer a quantidade de hóspedes e o valor da diária, concedendo um desconto de 10% para caso a reserva seja para um período maior que 10 dias.
+---
 
-## Regras e validações
-1. Não deve ser possível realizar uma reserva de uma suíte com capacidade menor do que a quantidade de hóspedes. Exemplo: Se é uma suíte capaz de hospedar 2 pessoas, então ao passar 3 hóspedes deverá retornar uma exception.
-2. O método ObterQuantidadeHospedes da classe Reserva deverá retornar a quantidade total de hóspedes, enquanto que o método CalcularValorDiaria deverá retornar o valor da diária (Dias reservados x valor da diária).
-3. Caso seja feita uma reserva igual ou maior que 10 dias, deverá ser concedido um desconto de 10% no valor da diária.
+## 📌 Descrição
 
+Este projeto consiste em um sistema de **reserva de hospedagens**, desenvolvido como parte do desafio da **Digital Innovation One (DIO)**, no módulo *Explorando a linguagem C#* da trilha .NET.
 
-![Diagrama de classe estacionamento](diagrama_classe_hotel.png)
+O sistema simula o processo de reserva em um hotel, com **validações de capacidade**, **cálculo de valor da diária**, e **controle de hóspedes e suítes**. O objetivo é reforçar conceitos fundamentais da linguagem C#, como orientação a objetos, encapsulamento e estruturas de dados básicas (`List`, `if`, `foreach`, etc.).
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+---
+
+## 🧠 Tecnologias Utilizadas
+
+- C#
+- .NET 6.0 ou superior
+- Visual Studio / VS Code
+- Git & GitHub
+
+---
+
+## 📁 Estrutura do Projeto
+
+- `Pessoa.cs` - Representa um hóspede, com nome e sobrenome.
+- `Suite.cs` - Representa uma suíte, com tipo, capacidade e valor da diária.
+- `Reserva.cs` - Responsável por gerenciar o relacionamento entre hóspedes e suíte, além de calcular o valor total e validar a reserva.
+- `Program.cs` - Ponto de entrada do sistema, simula o uso da aplicação.
+
+---
+
+## ✅ Funcionalidades
+
+- ✅ Cadastrar hóspedes e suíte.
+- ✅ Validar capacidade da suíte com base na quantidade de hóspedes.
+- ✅ Calcular valor total da hospedagem.
+- ✅ Conceder **10% de desconto** em reservas com **10 ou mais dias**.
+- ✅ Exibir lista de hóspedes e total de dias reservados.
+
+---
+
+## 📏 Regras de Negócio
+
+- Não é permitido reservar uma suíte com **capacidade menor** que a quantidade de hóspedes.
+- O método `ObterQuantidadeHospedes()` retorna o número de hóspedes cadastrados.
+- O método `CalcularValorDiaria()` retorna o valor total com ou sem desconto, dependendo do número de dias reservados.
+
+---
